@@ -1,4 +1,5 @@
-$tileWidth: 80px;
+$tileWidth: 140px;
+$hoverDropShadow: drop-shadow(4px 5px 6px rgba(0, 0, 0, 0.5));
 
 * {
     box-sizing: border-box;
@@ -44,10 +45,22 @@ body {
     border: 4px solid darkgrey;
     border-radius: 20px;
 
+    background: none;
+    border: none;
+
     &:hover {
         background-color: #f463bc;
         background-image: linear-gradient(0deg, #f463bc 0%, #2edfdc 100%);
 
         border-color: black;
+
+        background: none;
+        border: none;
+
+        filter: $hoverDropShadow;
     }
+}
+
+#center-face:hover {
+    filter: $hoverDropShadow;
 }
